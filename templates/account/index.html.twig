@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte - Sessad Pretotheque{% endblock %}
+
+{% block content %}
+<h1>Mon compte</h1>
+Bienvenue, {{app.user.prenom }} {{app.user.nom }},
+dans votre espace<br> vous allez pouvoir y gérer vos informations personnelles
+<hr>
+<a href="{{ path('account_password') }}">Modifier mon mot de passe</a></br>
+{% endblock %}
